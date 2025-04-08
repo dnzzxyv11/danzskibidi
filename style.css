@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://files.catbox.moe/6cayyu.jpg') no-repeat center center/cover;
+  color: white;
+  height: 100vh;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.buttons a {
+  display: inline-block;
+  background: white;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 25px;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.buttons a:hover {
+  background: #555;
+  color: white;
+}
+
+.socials {
+  margin-top: 30px;
+}
+
+.socials a {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-size: 12px;
+  color: #aaa;
+  z-index: 2;
+}
